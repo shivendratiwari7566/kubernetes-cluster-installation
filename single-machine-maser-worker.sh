@@ -33,7 +33,7 @@ sudo cat << EOF >> /etc/docker/daemon.json
                 "exec-opts": ["native.cgroupdriver=systemd"]
 }
 EOF
-# use bellow line for gpu cluster and private docker registry in  /etc/docker/daemon.json
+# use bellow line for gpu cluster and private docker registry in  /etc/docker/daemon.jsos
 <<comment
 {
 "insecure-registries":["10.40.41.59:5000"],
