@@ -27,7 +27,7 @@ kubeadm version
 #exit
 sudo rm /etc/containerd/config.toml
 systemctl restart containerd
-sudo touch daemon.json
+sudo touch /etc/docker/daemon.json
 sudo cat << EOF >> /etc/docker/daemon.json
 {
                 "exec-opts": ["native.cgroupdriver=systemd"]
