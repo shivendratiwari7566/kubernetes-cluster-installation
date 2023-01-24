@@ -57,3 +57,8 @@ kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.1/
 sleep 200
 kubectl get pod -A
 kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
+#enable kubectl autocomplete
+sudo apt-get install -y bash-completion
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+source ~/.bashrc
